@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubFrag1ActFrag2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp">
+       <TextView
+           android:id="@+id/sub1act_frag2_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="배추로 만드는 가족 주말 요리 3가지"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/sub1act_frag2_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 숭채 만두 넣은 전골 채소"
+            android:textSize="15dp"
+            android:layout_below="@id/sub1act_frag2_txt1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/sub1act_frag2_txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 주말엔 임금님처럼 궁중 음식 배추선"
+            android:textSize="15dp"
+            android:layout_below="@id/sub1act_frag2_txt2"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/sub1act_frag2_txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. 모여 앉아 먹는 배추전과 남은 고기와 채소를 활용한 배추 덮밥"
+            android:textSize="15dp"
+            android:layout_below="@id/sub1act_frag2_txt3"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/sub1act_frag2_txt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. 자투리 재료 모아 채소 된장 만들기"
+            android:textSize="15dp"
+            android:layout_below="@id/sub1act_frag2_txt4"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+</FrameLayout>

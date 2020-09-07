@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubFrag1ActFrag1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/sub1act_frag1_rel4"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sub1act_frag1__rel4_img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/imagephoto1"
+            android:layout_marginTop="50dp"
+            android:padding="1px"
+            />
+        <TextView
+            android:id="@+id/sub1act_frag1_rel4_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sub1act_frag1__rel4_img1"
+            android:layout_centerHorizontal="true"
+            android:text="홍명자 명인"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/sub1act_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐집밥 경력 30년⭐"
+        android:textSize="15dp"
+        android:layout_below="@id/sub1act_frag1_rel4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@id/sub1act_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐건강을 생각해 최소한의 조미료 사용⭐"
+        android:textSize="15dp"
+        android:layout_below="@id/sub1act_txt1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/sub1act_txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐한식,중식,일식 섭렵한 멀티 플레이어⭐"
+        android:textSize="15dp"
+        android:layout_below="@id/sub1act_txt2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/sub1act_txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⭐유아식 전문가⭐"
+        android:textSize="15dp"
+        android:layout_below="@id/sub1act_txt3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

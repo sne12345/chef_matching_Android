@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1EFEF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/frag4_relative0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:id="@+id/frag4_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="40dp"
+        >
+        <ImageView
+            android:id="@+id/frag4_img1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/frag4_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frag4_img1"
+            android:text="방구쟁이234"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:id="@+id/frag4_relative1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:layout_below="@id/frag4_txt1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/frag4_txt1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  집밥명인 등록  "
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frag4_relative2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/frag4_relative1"
+        android:background="@color/cardview_light_background"
+        >
+        <TextView
+            android:id="@+id/frag4_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 수업 요청"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/frag4_relative2_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_corner"
+            android:layout_below="@id/frag4_txt2">
+
+            <TextView
+                android:id="@+id/frag4_txt2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아직 요청한 수업이 없습니다."
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frag4_relative3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/cardview_light_background"
+        android:layout_below="@id/frag4_relative2"
+        android:layout_marginTop="15dp"
+        >
+
+
+        <TextView
+            android:id="@+id/frag4_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="구매 관리"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+
+
+        <ListView
+            android:id="@+id/frag4_list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_below="@id/frag4_txt3">
+        </ListView>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frag4_relative4"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/cardview_light_background"
+            android:layout_below="@id/frag4_relative3"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            >
+
+            <ListView
+                android:id="@+id/frag4_list4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                >
+            </ListView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

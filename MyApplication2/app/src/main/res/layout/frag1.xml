@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerImageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_hor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/viewPagerImageSlider"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_rice"
+                    android:layout_marginBottom="10px"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img1"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="밥"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative1"
+                >
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_noodle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10px"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img2"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="면"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative2"
+                >
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_soup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10px"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img3"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="국물"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative3"
+                >
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_side"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10px"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img4"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="반찬"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--
+        <RelativeLayout
+            android:id="@+id/relative_hor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor1"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/relative5"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img5"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="국/찌개"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative6"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative5"
+               >
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img6"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="밥류"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative7"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative6"
+                >
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img7"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="반찬"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative8"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative7"
+                >
+
+                <ImageView
+                    android:id="@+id/img8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img8"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="나물/무침"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_hor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor2"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/relative9"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img9"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="디자인"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative10"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative9"
+                >
+
+                <ImageView
+                    android:id="@+id/img10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img10"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="디자인"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative11"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative10"
+                >
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img11"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="디자인"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative12"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@id/relative11"
+                >
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img12"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="디자인"
+                    android:textSize="13dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        -->
+
+
+        <RelativeLayout
+        android:id="@+id/relative_hor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_hor1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="회원님을 위한 맞춤 서비스"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor4"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/relative_img1"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/content1"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/relative_txt1_1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/relative_img1"
+                android:text="집에서 해먹는 어머니의 손맛! 김치찌개 된장찌개 제육볶음"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt1_2"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img1"
+                android:layout_below="@id/relative_txt1_1"
+                android:text="0.0 | 0개의 평가"
+                android:textSize="11dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt1_3"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img1"
+                android:layout_below="@id/relative_txt1_2"
+                android:text="12,000원~"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hor6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor5"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/relative_img2"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/content2"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/relative_txt2_1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/relative_img2"
+                android:text="집에서 해먹는 어머니의 손맛! 김치찌개 된장찌개 제육볶음"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt2_2"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img2"
+                android:layout_below="@id/relative_txt2_1"
+                android:text="0.0 | 0개의 평가"
+                android:textSize="11dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt2_3"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img2"
+                android:layout_below="@id/relative_txt2_2"
+                android:text="50,000원~"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hor7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor6"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/relative_img3"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/content3"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/relative_txt3_1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/relative_img3"
+                android:text="집에서 해먹는 어머니의 손맛! 김치찌개 된장찌개 제육볶음"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt3_2"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img3"
+                android:layout_below="@id/relative_txt3_1"
+                android:text="0.0 | 0개의 평가"
+                android:textSize="11dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt3_3"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img3"
+                android:layout_below="@id/relative_txt3_2"
+                android:text="50,000원~"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hor8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="회원님을 위한 맞춤 서비스"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginLeft="25dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hor9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor8"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/relative_img9"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/content7"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/relative_txt9_1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/relative_img9"
+                android:text="집에서 해먹는 어머니의 손맛! 김치찌개 된장찌개 제육볶음"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt9_2"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img9"
+                android:layout_below="@id/relative_txt9_1"
+                android:text="0.0 | 0개의 평가"
+                android:textSize="11dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt9_3"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img9"
+                android:layout_below="@id/relative_txt9_2"
+                android:text="20,000원~"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hor10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor9"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/relative_img10"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/content8"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/relative_txt10_1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/relative_img10"
+                android:text="집에서 해먹는 어머니의 손맛! 김치찌개 된장찌개 제육볶음"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt10_2"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img10"
+                android:layout_below="@id/relative_txt10_1"
+                android:text="0.0 | 0개의 평가"
+                android:textSize="11dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt10_3"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img10"
+                android:layout_below="@id/relative_txt10_2"
+                android:text="50,000원~"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hor11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_hor10"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/relative_img11"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:src="@drawable/content5"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/relative_txt11_1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/relative_img11"
+                android:text="집에서 해먹는 어머니의 손맛! 김치찌개 된장찌개 제육볶음"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt11_2"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img11"
+                android:layout_below="@id/relative_txt11_1"
+                android:text="0.0 | 0개의 평가"
+                android:textSize="11dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                />
+            <TextView
+                android:id="@+id/relative_txt11_3"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/relative_img11"
+                android:layout_below="@id/relative_txt11_2"
+                android:text="50,000원~"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                />
+        </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
